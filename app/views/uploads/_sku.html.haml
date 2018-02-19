@@ -1,0 +1,25 @@
+SKU:
+%p
+%table{ border: 1 }
+  %tbody
+    %tr
+      %td SKU:
+      %td Supplier Code:
+      %td Additional Field 1
+      %td Additional Field 2
+      %td Additional Field 3
+      %td Additional Field 4
+      %td Additional Field 5
+      %td Additional Field 6
+      %td Price
+    - data.each do |object|
+      %tr
+        %td= object.sku_code
+        %td= object.supplier_code
+        %td= object.additional_field1
+        %td= object.additional_field2
+        %td= object.additional_field3
+        %td= object.additional_field4
+        %td= object.additional_field5
+        %td= object.additional_field6
+        %td= object.price

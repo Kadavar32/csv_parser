@@ -19,6 +19,8 @@ default: &default
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
+  username: csv_parser
+  password: 12345678
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
@@ -81,5 +83,4 @@ test:
 production:
   <<: *default
   database: csv_parser_production
-  username: csv_parser
-  password: <%= ENV['CSV_PARSER_DATABASE_PASSWORD'] %>
+

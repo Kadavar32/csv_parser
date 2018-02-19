@@ -1,0 +1,12 @@
+Suppliers:
+%p
+%table{ border: 1 }
+  %tbody
+    %tr
+      %td Supplier Code:
+      %td Name:
+    - data.each do |object|
+      %tr
+        %td= object.supplier_code
+        %td= object.name
+
