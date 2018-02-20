@@ -15,7 +15,7 @@ SKU:
       %td Price
     - data.each do |object|
       %tr
-        %td= object.id
+        %td= object.id || "FAILED"
         %td= object.sku_code
         %td= object.supplier_code
         %td= object.additional_field1

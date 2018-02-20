@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b4ea322-cbc2-4b95-86cb-8cfde6230cbd" name="Default" comment="basic implementation">
+    <list default="true" id="5b4ea322-cbc2-4b95-86cb-8cfde6230cbd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/uploads/_sku.html.haml" afterPath="$PROJECT_DIR$/app/views/uploads/_sku.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/uploads/_supplier.html.haml" afterPath="$PROJECT_DIR$/app/views/uploads/_supplier.html.haml" />
     </list>
@@ -51,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_supplier.html.haml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_supplier.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/uploads/_supplier.html.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -94,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_sku.html.haml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_sku.html.haml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/uploads/_sku.html.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+              <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -196,10 +195,10 @@
         <option value="$PROJECT_DIR$/app/controllers/uploads_controller.rb" />
         <option value="$PROJECT_DIR$/app/services/import_service.rb" />
         <option value="$PROJECT_DIR$/app/services/import_configs/sku_import_config.rb" />
-        <option value="$PROJECT_DIR$/app/views/uploads/_sku.html.haml" />
         <option value="$PROJECT_DIR$/app/models/supplier.rb" />
-        <option value="$PROJECT_DIR$/app/views/uploads/_supplier.html.haml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/app/views/uploads/_supplier.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/uploads/_sku.html.haml" />
       </list>
     </option>
   </component>
@@ -524,11 +523,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519061930800</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update readme">
+      <created>1519086456865</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1519086456866</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41394000" />
+    <option name="totallyTimeSpent" value="41550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="819" extended-state="6" />
@@ -582,7 +588,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="basic implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic implementation" />
+    <MESSAGE value="update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -950,14 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/uploads/_sku.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/supplier.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -980,7 +979,15 @@
     <entry file="file://$PROJECT_DIR$/app/views/uploads/_supplier.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/uploads/_sku.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding />
         </state>
       </provider>

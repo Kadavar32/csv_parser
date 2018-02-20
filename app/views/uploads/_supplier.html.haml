@@ -8,7 +8,7 @@ Suppliers:
       %td Name:
     - data.each do |object|
       %tr
-        %td= object.id
+        %td= object.id || "FAILED"
         %td= object.supplier_code
         %td= object.name
 
