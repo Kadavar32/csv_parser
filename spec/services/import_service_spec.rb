@@ -23,11 +23,11 @@ describe ImportService, type: :service do
       end
 
       context 'when supplier is not exist' do
-        it 'return non persisted sku with id = nil' do
+        it 'not return non persisted sku with id = nil' do
           result = subject
           data = result[:data]
           expect(data.first.supplier_code).to eq supplier_code
-          expect(data.last.id).to eq nil
+          expect(data.map(&:id).include?(nil)).to be false
         end
       end
 

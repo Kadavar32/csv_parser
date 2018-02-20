@@ -15,7 +15,7 @@ RSpec.describe UploadsController, type: :controller do
     let(:params) { { file: file } }
     before do
       (1..10).to_a.each { |_e| create(:sku) }
-      allow_any_instance_of(UploadsService).to receive(:create).and_return(Sku.all)
+      allow_any_instance_of(UploadsService).to receive(:create).and_return(ServiceResult.new('Sku', Sku.all))
     end
 
     subject { post :create, params: params }
@@ -28,7 +28,7 @@ RSpec.describe UploadsController, type: :controller do
       let(:params) { {} }
 
       it 'raises error' do
-        expect { subject }.to raise_error(ActionController::ParameterMissing)
+        expect(subject).to redirect_to(new_upload_path)
       end
     end
   end
