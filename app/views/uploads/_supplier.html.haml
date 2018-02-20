@@ -3,10 +3,12 @@ Suppliers:
 %table{ border: 1 }
   %tbody
     %tr
+      %td ID:
       %td Supplier Code:
       %td Name:
     - data.each do |object|
       %tr
+        %td= object.id
         %td= object.supplier_code
         %td= object.name
 
