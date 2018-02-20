@@ -5,6 +5,6 @@
   %table{:border => 1}
     -case @service_result.resource_type
     -when 'Sku'
-      =render('sku', data: @service_result.data)
+      =render('sku', data: @service_result.data[0..200])
     -when 'Supplier'
       =render('supplier', data: @service_result.data)

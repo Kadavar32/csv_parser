@@ -22,4 +22,11 @@ class ImportConfigs::SkuImportConfig < ImportConfigs::Base
   def batch_size
     2000
   end
+
+  def raw_data_to_object_mapping
+    ->(part) do
+      supplier_codes = Supplier.where(supplier_code: part.map { |e| e[:supplier_code] }).pluck(:supplier_code)
+      part.map { |e| supplier_codes.include?(e[:supplier_code]) ? Sku.new(e) : nil }.compact
+    end
+  end
 end
