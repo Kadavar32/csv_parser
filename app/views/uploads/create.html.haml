@@ -1,10 +1,10 @@
--if @service_result.error.present?
+-if @error.present?
   ERROR
-  =@service_result.error
+  = @error
 -else
-  %table{:border => 1}
-    -case @service_result.resource_type
+  %table{ border: 1 }
+    -case @resource_type
     -when 'Sku'
-      =render('sku', data: @service_result.data[0..200])
+      =render('sku', data: @data)
     -when 'Supplier'
-      =render('supplier', data: @service_result.data)
+      =render('supplier', data: @data)

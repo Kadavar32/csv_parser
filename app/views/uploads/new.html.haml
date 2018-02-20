@@ -3,6 +3,12 @@
     %div{:class => "alert alert-#{type == :notice ? "success" : type} fadeout", "data-dismiss" => "alert"}
       %button.close &times;
       = msg if msg.is_a?(String)
-= form_tag uploads_path, :multipart => true do
-  = file_field_tag 'file', multiple: true
-  = submit_tag "Import"
+= form_tag uploads_path, multipart: true do
+  %p
+    File
+    = file_field_tag 'file', multiple: false
+  %p
+    Display limit
+    = number_field_tag 'limit'
+  %p
+    = submit_tag 'Import'
